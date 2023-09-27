@@ -13,7 +13,7 @@ int main(int argc, char * argv[])
     snd_pcm_hw_params_t *params;
     FILE * fd = fopen(argv[1], "w");
 
-    int ret = snd_pcm_open(&pcm, "hw:0", SND_PCM_STREAM_CAPTURE,0);
+    int ret = snd_pcm_open(&pcm, "plughw:1", SND_PCM_STREAM_CAPTURE,0);
 
     snd_pcm_hw_params_alloca(&params);
     ret = snd_pcm_hw_params_any(pcm,params);
