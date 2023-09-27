@@ -23,7 +23,7 @@ $(APP_NAME_PLAYBACK): $(OBJ_FILES_PLAYBACK)
 
 
 clean:
-	rm *.o $(APP_NAME_INPUT)
+	rm *.o $(APP_NAME_INPUT) $(APP_NAME_PLAYBACK)
 fresh:
 	make clean
 	make all
